@@ -1,0 +1,42 @@
+/*1rem = 1em = 16px*/
+/***********************/
+/*Below 1232px(Landscape Tablets)*/
+/***********************/
+@media (max-width: 77em) {
+  html {
+    /*9px/16px =56.25% */
+    font-size: 56.25%;
+  }
+}
+/***********************/
+/*Below 560px(Phones)*/
+/***********************/
+@media (max-width: 35em) {
+  html {
+    /*9px/16px =56.25% */
+    font-size: 30.25%;
+  }
+  nav {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  /* MAIN */
+  .app {
+    position: relative;
+    max-width: 50rem;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(5, 15rem) auto;
+    gap: 2rem;
+  }
+
+  .balance {
+    grid-column: 1;
+    margin-bottom: 2rem;
+  }
+
+  .summary__label {
+    margin-right: 0.8rem;
+  }
+}
